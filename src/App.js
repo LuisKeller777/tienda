@@ -1,19 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import { NavBar } from './components/NavBar';
+import {ItemListContainer} from "./components/container/ItemListContainer";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./styles.css"
 
 function App() {
-    return ( <
-        div className = "App" >
-        <
-        header className = "App-header" >
-        <
-        h1 > Tienda Virtual < /h1> <
-        img src = { logo }
-        className = "App-logo"
-        alt = "logo" / >
-        <
-        /header> < /
-        div >
+    return ( 
+        <>
+        <NavBar/>
+        <ItemListContainer greeting={"Hello World!"}/>
+        </>
     );
 }
 
